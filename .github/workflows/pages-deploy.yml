@@ -50,7 +50,7 @@ jobs:
         run: |
           bundle exec htmlproofer _site \
             --disable-external \
-            --ignore-urls "/C-Programming-Language/book/"
+            --ignore-urls "/C-Programming-Language/book/.*"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
